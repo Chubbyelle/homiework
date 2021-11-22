@@ -6,6 +6,7 @@ function p = bisection(f, a, b, tol)
      if p-a < tol, break; end
      if f(a)*f(b) > 0
          a = p;
+         a = 1;
      else, b = p;
      end
  end
